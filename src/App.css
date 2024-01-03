@@ -3,15 +3,213 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
-background-color: #E1ECEB;
+/* background-color: #E1ECEB; */
 
+}
+main{
+  background-color: #E1ECEB;
+  display: flex;
+}
+/* disable link underline */
+a{
+  text-decoration: none;
 }
 nav{
   margin: 10px 10px;
-  width: 200px;
+  width: 250px;
   height: 750px;
   position: sticky;
   top: 0;
-  background-color: #3D5654;
+  background-color:#425C5A;
   border-radius: 20px;
+}
+nav .info{
+  width: 100%;
+  height: 25%;
+  background-color: #3D5654;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+nav .info .info-user{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px #D6A217  solid;
+  /* background-image: url("https://media.licdn.com/dms/image/D4D03AQF6f4kVR0cmNw/profile-displayphoto-shrink_400_400/0/1683708265013?e=1709164800&v=beta&t=zkMN7EP-WKPDHaylOokLbWgXRqAAxkaZm4uOoGVkNsY"); */
+  background-size: cover;
+  /* display: hidden ; */
+  
+}
+nav .info .info-user img{
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+nav .info p{
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: 600;
+  letter-spacing: .7px;
+}
+.nav-container{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-top: 40px;
+  height: 200px;
+}
+.dashboard,.contact,.setting{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+ svg{
+  width: 28px;
+}
+.dashboard h2,.contact h2,.setting h2{
+  color: white;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  
+}
+.active{
+  background-color: #E1ECEB;
+  height: 40px;
+  border-top-left-radius:20px ;
+  border-bottom-left-radius:20px ;
+  
+}
+.active h2{
+  color: #425C5A;
+}
+.sidebar-footer{
+  margin-top: 150px;
+  /* background-color: #3D5654; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height:auto;
+  /* border-top:4px white solid; */
+}
+.sidebar-footer img{
+  width: 200px;
+}
+.sidebar-footer h1{
+  color: #E1ECEB;
+  font-size: 16px;
+  letter-spacing: .7px;
+  font-weight: 600;
+}
+.main-dashboard{
+  width: 1200px;
+  margin: 12px auto;
+  /* background-color: #D6A217; */
+  border-radius: 20px;
+}
+.finetune{
+  background-color: white;
+  margin: 30px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.finetune h2{
+  color: #3D5654;
+  letter-spacing: .7px;
+  font-weight: 600;
+}
+.firstrow,.secondrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+input{
+  background-color: #E1ECEB;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  width: 250px;
+  letter-spacing: .7px;
+  color: #3D5654;
+}
+button{
+  padding: 15px;
+  width:250px ;
+  background-color: #C99C33;
+  color: #E1ECEB;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+select{
+  padding: 15px;
+  width: 250px;
+  color: #3D5654;
+  background-color: #E1ECEB;
+  border: none;
+  border-radius: 20px;
+
+}
+/* .table{
+  background-color: #3D5654;
+  color: #E1ECEB;
+  margin: 30px 30px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+/* Table Container */
+.table {
+  background-color: #3D5654;
+  color: #E1ECEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 30px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
+
+/* Table Head */
+.table thead {
+  background-color: #1E2D2B;
+}
+
+.table th {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Body */
+.table tbody {
+  background-color: #2F4744;
+}
+
+.table td, .table th {
+  padding: 12px;
+  border-bottom: 1px solid #1E2D2B;
+}
+
+.table tr:hover {
+  background-color: #3D5654;
+  cursor: pointer;
 }
